@@ -1,4 +1,4 @@
-// dizer se o numero e par ou impar
+// Programa que lê um número inteiro e informa se ele é par ou ímpar.
 #include <iostream>
 using namespace std;
 
