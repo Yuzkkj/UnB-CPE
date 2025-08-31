@@ -8,6 +8,7 @@ int main() {
     cout << "Digite um numero inteiro: ";
     cin >> x;
 
+    // Checa se o módulo de x por 2 é zero
     if (x % 2 == 0) {
         cout << x << " é par.";
     } else {
