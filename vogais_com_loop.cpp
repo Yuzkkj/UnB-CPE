@@ -12,16 +12,12 @@ int main()
     // mostrar as vogais da frase
     int i = 0;
     int vogais = 0;
-
-    for (char &c : frase)
-    {
-        c = tolower(c);
-    }
     
     cout << "Vogais na frase: " << endl;
 
     while (i < frase.length())
     {
+        frase[i] = tolower(frase[i]);
         if (frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u')
         {
             vogais++;
