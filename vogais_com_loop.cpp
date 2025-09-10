@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // digitar a frase
+    string frase;
+    cout << "Digite uma frase: ";
+    getline(cin, frase);
+
+    // mostrar as vogais da frase
+    int i = 0;
+    int vogais = 0;
+
+    for (char &c : frase)
+    {
+        c = tolower(c);
+    }
+    
+    cout << "Vogais na frase: " << endl;
+
+    while (i < frase.length())
+    {
+        if (frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u')
+        {
+            vogais++;
+            cout << frase[i] << endl;
+        }
+
+        i++;
+    }
+
+    cout << "A frase '" << frase << "' tem " << vogais << " vogais." << endl;
+
+    return 0;
+}
