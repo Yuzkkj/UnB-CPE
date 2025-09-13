@@ -10,12 +10,11 @@ int main()
     getline(cin, frase);
 
     // mostrar as vogais da frase
-    int i = 0;
     int vogais = 0;
     
     cout << "Vogais na frase: " << endl;
 
-    while (i < frase.length())
+    for (int i = 0; i < frase.length(); i++)
     {
         frase[i] = tolower(frase[i]);
         if (frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u')
