@@ -10,8 +10,6 @@ int main()
     cout << "Jogador 1, digite a palavra secreta: ";
     cin >> palavra;
 
-
-
     for (int i = 0; i < palavra.length(); i++)
     {
         palavra[i] = toupper(palavra[i]);
@@ -47,7 +45,7 @@ int main()
             }
         }
 
-        string temp;
+        string temp = "";
         for (int i = 0; i < palavra.length(); i++)
         {
             if (acertos[i])
