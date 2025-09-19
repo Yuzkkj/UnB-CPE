@@ -13,7 +13,8 @@ int main()
     {
         if (frase[i] != ' ')
         {
-            letras += frase[i];
+            char lowered = tolower(frase[i]);
+            letras += lowered;
         }
     }
 
