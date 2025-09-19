@@ -8,7 +8,6 @@ int main()
     cout << "Digite uma palavra para verificar se e palindromo: ";
     cin >> palavra;
 
-
     string backwards = "";
 
     for (int i = palavra.length() - 1; i >= 0; i--)
