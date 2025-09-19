@@ -5,19 +5,18 @@ using namespace std;
 
 int main()
 {
-    string frase = "";
-    cout << "Digite uma frase para verificar se e palindromo: ";
-    getline(cin, frase);
+    string palavra = "";
+    cout << "Digite uma palavra para verificar se e palindromo: ";
+    cin >> palavra;
 
-    float length = frase.length();
-    float metade = length / 2;
-    metade = ceil(metade);
+    int length = palavra.length();
+    int metade = length / 2;
 
     int certas = 0;
 
     for (int i = 0; i < metade; i++)
         {
-            if (frase[i] == frase[frase.length() - 1 - i])
+            if (palavra[i] == palavra[length - 1 - i])
             {
                 certas++;
             }
@@ -25,11 +24,11 @@ int main()
 
         if (certas == metade)
         {
-            cout << "A frase e um palindromo." << endl;
+            cout << "A palavra e um palindromo." << endl;
         }
         else
         {
-            cout << "A frase nao e um palindromo" << endl;
+            cout << "A palavra nao e um palindromo" << endl;
         }
 
     system("pause");
